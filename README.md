@@ -43,25 +43,22 @@ Setup and Installation
 Follow these steps to get the project running on your local machine.
 
 1. Clone the Repository
-Bash
-
 git clone https://github.com/your-username/Siet-Career-Guider.git
 cd Siet-Career-Guider
+
 2. Create and Activate a Virtual Environment
 It's highly recommended to use a virtual environment to manage project dependencies.
 
 Windows:
 
-Bash
-
 python -m venv .venv
 .\.venv\Scripts\activate
-macOS / Linux:
 
-Bash
+macOS / Linux:
 
 python -m venv .venv
 source .venv/bin/activate
+
 3. Install Dependencies
 Create a file named requirements.txt with the content below, and then run the installation command.
 
@@ -76,11 +73,11 @@ langchain-google-genai
 langchain-community
 faiss-cpu
 python-dotenv
+
 Installation Command:
 
-Bash
-
 pip install -r requirements.txt
+
 Configuration
 This application requires API keys to function. The keys are managed securely using a .env file.
 
@@ -88,13 +85,12 @@ This application requires API keys to function. The keys are managed securely us
 Create a file named .env in the root directory of the project.
 
 2. Add Your API Keys
-Open the .env file and add your secret keys.
-
-Code snippet
+Open the .env file and add your secret keys. Do not use quotes around the keys.
 
 # .env file
-GOOGLE_API_KEY="YOUR_GOOGLE_API_KEY_HERE"
-GOOGLE_SERPER_API_KEY="YOUR_GOOGLE_SERPER_API_KEY_HERE"
+GOOGLE_API_KEY=YOUR_GOOGLE_API_KEY_HERE
+GOOGLE_SERPER_API_KEY=YOUR_GOOGLE_SERPER_API_KEY_HERE
+
 3. Secure Your Keys
 IMPORTANT: Add the .env file to your .gitignore file to ensure you never accidentally commit your secret keys to GitHub.
 
@@ -103,23 +99,13 @@ IMPORTANT: Add the .env file to your .gitignore file to ensure you never acciden
 .env
 .venv/
 __pycache__/
+
 Usage
 Once the setup and configuration are complete, run the Streamlit application with the following command:
 
-Bash
-
 streamlit run app.py
+
 Open your web browser and navigate to the local URL provided by Streamlit (usually http://localhost:8501).
 
-Project Structure
-Siet-Career-Guider/
-├── .venv/
-├── .gitignore
-├── app.py                  # Main Streamlit application file
-├── career_guidance_system.py # Backend logic for analysis
-├── career_chatbot.py       # RAG chatbot logic and UI
-├── requirements.txt        # Project dependencies
-├── .env                    # Secret API keys (DO NOT COMMIT)
-└── README.md               # This file
 License
-This project is licensed under the MIT License. See the LICENSE file for details.
+This project is licensed under the MIT License.
