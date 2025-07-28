@@ -1,0 +1,10 @@
+streamlit
+pandas
+numpy
+plotly
+langchain
+langchain-google-genai
+langchain-community
+crewai
+google-genai
+euriai
