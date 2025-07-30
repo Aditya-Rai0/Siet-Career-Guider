@@ -9,4 +9,4 @@ crewai
 google-genai
 euriai
 gunicorn
--e .
+
