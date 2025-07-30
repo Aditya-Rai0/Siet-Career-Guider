@@ -52,7 +52,7 @@ Environment Management: python-dotenv
 Follow these steps to get the project running on your local machine.
 
 # 1. Clone the Repository
-```git clone https://github.com/your-username/Siet-Career-Guider.git```
+```git clone https://github.com/Aditya-Rai0/Siet-Career-Guider.git```
 
 ```cd Siet-Career-Guider```
 
