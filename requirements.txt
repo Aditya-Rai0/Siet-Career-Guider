@@ -8,3 +8,5 @@ langchain-community
 crewai
 google-genai
 euriai
+gunicorn
+-e .
